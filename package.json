@@ -1,0 +1,23 @@
+{
+  "name": "service_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service_import.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-champagne/service_script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-champagne/service_script/issues"
+  },
+  "homepage": "https://github.com/c-champagne/service_script#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "csv-parse": "^5.3.0"
+  }
+}
