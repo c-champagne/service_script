@@ -10,18 +10,20 @@ This script will import services when provided with a CSV file containing the fo
 This script will also create an escalation policy for each service. This escalation policy will consist of a single level containing the user whose ID is passed in.
 
 ## Input
-This script can be run from the terminal using [NodeJs](https://nodejs.org/en/download/). 
+This script can be run from the terminal using [NodeJs](https://nodejs.org/en/download/).  Please install NodeJs in order to use this script.
 
 The CSV file must be in the same directory as the script file. The following values must be included when running the script:
 - KEY=Your_API_Key_Here
-- USER=User_ID (This user is used in the escalation policy created for the service. The user ID can be found in the URL of a user's profile.)
-- FILE=Your_CSV_File.csv
+- USER=User_ID (This user is used in the escalation policy created for the service. The user ID can be found in the URL of a user's profile and begins with the letter `P`.)
+- FILE=Your_CSV_File_Name.csv
 
 In terminal:
 
-After navigating to the directory containing the script, run `npm install` to install required dependencies. The dependencies used in this script are:
+1. Navigate to the directory containing the script. 
+
+2. Run `npm install` to install required dependencies. The dependencies used in this script are:
 - [axios](https://github.com/axios/axios)
 - [csv-parse](https://github.com/adaltas/node-csv/tree/master/packages/csv-parse/)
 
-Run `KEY=Your_API_Key_Here USER=PXXXXXX FILE=Your_CSV_File.csv node service_import.js` to execute the script.
+3. Run `KEY=Your_API_Key_Here USER=PXXXXXX FILE=Your_CSV_File.csv node service_import.js` to execute the script.
 
